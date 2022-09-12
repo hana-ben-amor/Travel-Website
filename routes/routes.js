@@ -7,7 +7,7 @@ router.use(express.static(path.join(__dirname,'/../public/javascripts')))
 router.use(function (req, res, next) {
     var date = new Date();
     //0 for sunday ans 7 for saturday
-    if(date.getDay()>0 && date.getDay() < 6 && date.getHours() > 9 && date.getHours()<18){
+    if(date.getDay()>0 && date.getDay() < 6 && date.getHours() > 9 && date.getHours()<17){
         next();
         console.log('okay')
     }else{
