@@ -1,0 +1,61 @@
+doctype html
+html
+   head
+      title="Contact"
+      link(href='https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap' rel='stylesheet')
+      link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
+      script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')
+      script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js' integrity='sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz' crossorigin='anonymous')
+      script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8' crossorigin='anonymous')
+      link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel='stylesheet' )
+      style 
+         include ../public/style/contact.css    
+   body
+      include includes/navbar.pug
+      .container
+         header
+            h1 Contact Us
+         .content
+            .content-form
+               section
+                  i.fa.fa-map-marker.fa-2x(aria-hidden='true')
+                  h2 address
+                  p
+                     | Lorem ipsum dolor sit. 
+                     br
+                     |                         Lorem, ipsum dolor. 
+                     br
+                     |                         lorem
+               section
+                  i.fa.fa-phone.fa-2x(aria-hidden='true')
+                  h2 Phone
+                  p 123-456-78901548
+                  section
+                  i.fa.fa-envelope.fa-2x(aria-hidden='true')
+                  h2 E-mail
+                  p dghdgqd@temporary.net
+            form
+               .form
+                  .right
+                     .contact-form
+                        input(type='text' required='')
+                        span Full Name
+                     .contact-form
+                        input(type='E-mail' required='')
+                        span E-mail Id
+                     .contact-form
+                        textarea(name='text')
+                        span  Type your Message....
+                     .contact-form
+                        input(type='submit' name='submit')
+         .media
+            li
+               i.fa.fa-facebook-square.fa-2x(aria-hidden='true')
+            li
+               i.fa.fa-instagram.fa-2x(aria-hidden='true')
+            li
+               i.fa.fa-whatsapp.fa-2x(aria-hidden='true')
+            li
+               i.fa.fa-twitter-square.fa-2x(aria-hidden='true')
+         .empty
+      include includes/footer.pug
